@@ -16,7 +16,9 @@ module Ratonvirus
         # We want Ratonvirus to report issues on file missing errors.
         error_file_missing: true,
         # No output is required not to fill the logs. The scanning errors
-        output_level: "off"
+        output_level: "off",
+        # Config file
+        config_file: "config/clamav/clamd.conf"
       ).freeze
 
       class << self
